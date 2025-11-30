@@ -7,9 +7,10 @@ on:
     paths:
       - ".github/workflows/renovate.yml"
       - "org-inherited-config.json"
-  schedule:
-    # Every 30 minutes
-    - cron: "*/30 * * * *"
+  # Scheduled runs are disabled until RENOVATE_APP_ID and RENOVATE_PRIVATE_KEY secrets are configured
+  # schedule:
+  #   # Every 30 minutes
+  #   - cron: "*/30 * * * *"
   workflow_dispatch:
     inputs:
       log-level:
